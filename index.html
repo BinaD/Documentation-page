@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentataion page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="wrapper">
+        <header class="header">
+    <div class="menu" onclick = "opennav()">
+        &#9776
+        <span>Manu</span>
+    </div>
+    <div class="logo">
+        LIQUID
+    </div>
+</header>
+
+    <nav class="nav">
+        <h3>LIQUID</h3>
+        <a href="#">Introduction</a>
+        <a href="#">Operation</a>
+        <a href="#">Tags</a>
+        <a href="#">Whitespace</a>
+        <a href="#">Variation</a>
+        <a href="#">Variables</a>
+        <a href="#">Output</a>
+    </nav>
+
+    <main class="container">
+        <h3>INTRODUCTION</h3>
+        <P>Lorem ipsum <strong class="keyword">dolor</strong> sit amet <strong class="keyword">consectetur</strong>, adipisicing elit. Illo recusandae debitis earum ipsa saepe repellat fugiat fugit labore natus praesentium porro ullam soluta mollitia commodi, nihil fuga dolores impedit repellendus?</P>
+
+        <h3>OBJECTS</h3>
+        <P>Lorem ipsum <strong class="keyword">dolor</strong> sit amet <strong class="keyword">consectetur</strong>, adipisicing elit. Illo recusandae debitis earum ipsa saepe repellat fugiat fugit labore natus <strong class="highlight"> praesentium </strong>porro ullam soluta mollitia commodi, nihil fuga dolores impedit repellendus?</P>
+ 
+        <div class="input">
+                <span class="input_heading">INPUT</span>
+            <p>
+               
+                {{page.title}}
+            </p>
+        </div>
+
+            <div class="output">
+                    <span class="input_heading">INPUT</span>
+                    <p>
+                        Introduction
+                    </p>
+        </div>
+
+        <p></p>
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</body>
+</html>

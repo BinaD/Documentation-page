@@ -1,0 +1,91 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    font-size: 100%;
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    flex-direction: row-reverse;
+}
+
+.logo{
+    margin-right: auto;
+    /* display: none; */
+}
+
+.menu{
+    cursor: pointer;
+    /* display: none; */
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.keyword{
+    color: rgb(79, 176, 250);
+}
+
+.highlight{
+    background:lightgrey;
+}
+
+.nav {
+background:skyblue; 
+color: rgb(255, 255, 255);
+position: fixed;
+width: 75%;
+height: 100%;
+padding: 1em;
+left: -500px;
+transition: .1s;
+overflow-y: scroll;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: .7rem;
+    
+}
+
+.nav_heading{
+    padding: 1.5;
+}
+
+.input, .output{
+    background: rgba(212, 240, 243, 0.52);
+}
+
+.input p , .output p{
+    padding: 1em;
+}
+
+/* .input_text{
+    padding: 1rem;
+    color: #000080;
+    display: block;
+} */
+
+.input_heading{
+    display: block;
+    background: lightskyblue;
+}
+@media(min-width: 720px){
+    .menu, .nav{
+        left: 0;
+        width: 20%;
+    }
+    .menu, .logo{
+        display: none;
+    }
+}
+
+.container{
+    width: 75%;
+    margin: 0 1em 0 auto;
+}
